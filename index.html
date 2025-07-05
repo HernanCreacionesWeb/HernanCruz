@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hernán Cruz | Portafolio Profesional</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #203a43;
+    }
+
+    .grid-servicios,
+    .portafolio-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .grid-servicios {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .portafolio-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      align-items: start;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea, button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #203a43;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2c5364;
+    }
+
+    footer {
+      background: #0f2027;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    audio, video {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    a {
+      color: #2c5364;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="personal-portfolio/src/perfil.jpg" alt="Foto de Hernán Cruz">
+    <h1>Hernán Cruz</h1>
+    <p>Redacción clara. Edición precisa. Contenidos que conectan.</p>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/hernan-cruz-creacionesweb/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/her.things4" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </header>
+
+  <section id="inicio">
+    <h2>Redacción jurídica · Edición audiovisual · Soporte digital</h2>
+    <p>Profesional flexible enfocado en contenidos de calidad para medios, estudios y empresas.</p>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy estudiante de Derecho y comunicador entusiasta. Me especializo en redacción jurídica y científica, corrección de tesis, creación y edición de audio y video, y apoyo administrativo digital. Soy metódico, comunicativo y siempre enfocado en resultados efectivos y eficientes.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="grid-servicios">
+      <div>
+        <h3>Corrección Jurídica</h3>
+        <p>Normas APA, redacción técnica, adaptación de inglés a español y portugués a español, manteniendo la coherencia y estilo.</p>
+      </div>
+      <div>
+        <h3>Edición de Audio y Video</h3>
+        <p>FL Studio, Audacity, DaVinci Resolve, CapCut.</p>
+      </div>
+      <div>
+        <h3>Contenido Digital</h3>
+        <p>Reels, videos educativos, comunicación para redes.</p>
+      </div>
+      <div>
+        <h3>Soporte Administrativo</h3>
+        <p>Carga de datos, WordPress básico, organización digital.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portafolio">
+    <h2>Portafolio</h2>
+    <div class="portafolio-grid">
+      <div>
+        <h4>Edición de Podcast</h4>
+        <audio controls>
+          <source src="personal-portfolio/src/podcast.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div>
+        <h4>Reel Educativo</h4>
+        <video controls>
+          <source src="personal-portfolio/src/spot.webm" type="video/mp4">
+        </video>
+      </div>
+      <div>
+  <h4>Corrección de Tesis</h4>
+  <a href="personal-portfolio/src/Articulo apologia del crimen -Gilcilene Gusmao.pdf" target="_blank" style="display:block;">Ver muestra 1 (PDF)</a>
+  <a href="personal-portfolio/src/Artigo_Mulheres Invisiveis_fazendo_ Espanhol.pdf" target="_blank" style="display:block;">Ver muestra 2 (PDF)</a>
+  <a href="personal-portfolio/src/Trabajo - Autoritarismo y control social en Venezuela.pdf" target="_blank" style="display:block;">Ver muestra 3 (PDF)</a>
+</div>
+
+    </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+  <form id="contact-form">
+  <input type="text" name="user_name" placeholder="Tu nombre" required>
+  <input type="email" name="user_email" placeholder="Tu correo" required>
+  <textarea name="message" placeholder="Escribí tu mensaje" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+
+    <p>WhatsApp: +54 2616655143</p>
+    <p><a href="https://www.linkedin.com/in/hernan-cruz-creacionesweb/" target="_blank">Mi perfil de LinkedIn</a></p>
+    <p><a href="personal-portfolio/src/Cruz Garro Hernán Gonzalo - CVr.pdf" download>Descargar CV (PDF)</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Hernán Cruz – Todos los derechos reservados.</p>
+  </footer>
+
+  <a href="https://wa.me/2616655143" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+
+
+
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("PHWpnDkO3Jo6taZbr"); // Reemplaza con tu User ID
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    emailjs.sendForm('service_9iidu1n', 'template_qa4haq7', this)
+      .then(function() {
+        alert('Mensaje enviado correctamente');
+      }, function(error) {
+        alert('Error al enviar: ' + JSON.stringify(error));
+      });
+  });
+</script>
+
+
+
+</body>
+</html>
